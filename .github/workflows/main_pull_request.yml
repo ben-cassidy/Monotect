@@ -6,9 +6,19 @@ on:
     - main
 
 jobs:
+
   enforce_git_lfs:
     name: Enforce Git LFS
     runs-on: ubuntu-latest
     steps:
     - name: LFS Check
       uses: MPLew-is/lfs-check-action@1.0.0
+
+  enforce_code_style:
+    name: Enforce Code Style
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - working-directory: src/Monotect
+      run:
+        dotnet format --verify-no-changes
