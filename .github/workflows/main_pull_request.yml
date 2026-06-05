@@ -18,4 +18,6 @@ jobs:
     name: Enforce Code Style
     runs-on: ubuntu-latest
     steps:
-    - run: dotnet format --verify-no-changes
+    - run:
+        cd src/Monotect
+        dotnet format --verify-no-changes
