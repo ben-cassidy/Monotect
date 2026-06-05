@@ -18,6 +18,7 @@ jobs:
     name: Enforce Code Style
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        cd src/Monotect
+    - uses: actions/checkout@v4
+    - working-directory: src/Monotect
+      run:
         dotnet format --verify-no-changes
