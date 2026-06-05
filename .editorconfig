@@ -278,3 +278,8 @@ dotnet_diagnostic.IDE2006.severity = warning
 # CA1822: Make member static
 # There is a risk of accidentally breaking an internal API that partners rely on though IVT.
 dotnet_code_quality.CA1822.api_surface = private
+
+# Place MPL 2.0 license header at the top of each source file
+[*.{cs}]
+file_header_template = This Source Code Form is subject to the terms of the Mozilla Public\nLicense, v. 2.0. If a copy of the MPL was not distributed with this\nfile, You can obtain one at http://mozilla.org/MPL/2.0/.
+dotnet_diagnostic.IDE0073.severity = warning
