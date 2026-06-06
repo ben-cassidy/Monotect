@@ -16,6 +16,20 @@ public class TestGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        throw new NotImplementedException();
+        context.RegisterPostInitializationOutput(static postInitializationContext =>
+        {
+            postInitializationContext.AddSource("TestSourceFile.cs", SourceText.From("""
+            using System;
+
+            namespace Monotect.Generator.Output;
+
+            public class GeneratedClass
+            {
+                public void GeneratedMethod()
+                    => Console.WriteLine("Test Worked!");
+            }
+
+            """, Encoding.UTF8));
+        });
     }
 }
