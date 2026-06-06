@@ -22,3 +22,12 @@ jobs:
     - working-directory: src/Monotect
       run:
         dotnet format --verify-no-changes
+
+  run_unit_tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - working-directory: src/Monotect
+      run:
+        dotnet test
