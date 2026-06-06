@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Monotect.Analyzer/Monotect.Analyzer.csproj" />
   <Project Path="Monotect.Generator/Monotect.Generator.csproj" />
   <Project Path="Monotect.Tests/Monotect.Tests.csproj" />
   <Project Path="Monotect/Monotect.csproj" />
