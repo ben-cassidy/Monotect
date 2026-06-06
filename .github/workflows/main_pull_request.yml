@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - working-directory: src/Monotect
+    - working-directory: src
       run:
         dotnet format --verify-no-changes
 
@@ -28,6 +28,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - working-directory: src/Monotect
+    - working-directory: src
       run:
         dotnet test
