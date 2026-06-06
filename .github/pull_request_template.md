@@ -9,5 +9,4 @@
 - [ ] Added at least one appropriate label to the pull request
 - [ ] Mention any issues that this pull request resolves
 - [ ] Ensure tests cover any new functionality
-- [ ] Ensure all tests pass
-- [ ] Ensure all code follows the project's [code standards](../CONTRIBUTING.md#code-standards) and [generative AI rules](../CONTRIBUTING.md#use-of-generative-ai)
+- [ ] Ensure all code follows the project's [generative AI rules](../CONTRIBUTING.md#use-of-generative-ai)
